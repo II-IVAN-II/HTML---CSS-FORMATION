@@ -37,6 +37,8 @@ main {
 }
 main > section {
   display: none;
+  padding-right: 114px;
+  padding-left: 114px;
 }
 main > section.active {
   display: block;
@@ -82,6 +84,7 @@ main > section.active {
   padding-left: 39px;
   display: flex;
   flex-direction: column;
+  z-index: 10;
 }
 #sidebar .toggle-sidebar {
   position: absolute;
@@ -235,6 +238,7 @@ main > section.active {
 }
 #home .info .socials ul {
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -275,12 +279,238 @@ main > section.active {
 }
 #home .image img {
   border-radius: 8px;
+  max-width: 100%;
   transition: all 0.3s;
 }
 #home .image img:hover {
   filter: saturate(200%) sepia(1);
 }
+#home .meteor-shower {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  right: 0;
+  top: 0;
+  overflow: hidden;
+  z-index: -1;
+}
+#home .meteor-shower .meteor:nth-child(1) {
+  position: absolute;
+  background-image: url("../images/meteor.png");
+  width: 60px;
+  height: 49px;
+  opacity: 0;
+  top: 65vh;
+  left: 55vw;
+  -webkit-animation: meteor 3692ms linear infinite;
+          animation: meteor 3692ms linear infinite;
+  -webkit-animation-delay: 2799ms;
+          animation-delay: 2799ms;
+}
+#home .meteor-shower .meteor:nth-child(2) {
+  position: absolute;
+  background-image: url("../images/meteor.png");
+  width: 60px;
+  height: 49px;
+  opacity: 0;
+  top: 54vh;
+  left: 39vw;
+  -webkit-animation: meteor 6624ms linear infinite;
+          animation: meteor 6624ms linear infinite;
+  -webkit-animation-delay: 1802ms;
+          animation-delay: 1802ms;
+}
+#home .meteor-shower .meteor:nth-child(3) {
+  position: absolute;
+  background-image: url("../images/meteor.png");
+  width: 60px;
+  height: 49px;
+  opacity: 0;
+  top: 60vh;
+  left: 78vw;
+  -webkit-animation: meteor 4928ms linear infinite;
+          animation: meteor 4928ms linear infinite;
+  -webkit-animation-delay: 3636ms;
+          animation-delay: 3636ms;
+}
+#home .meteor-shower .meteor:nth-child(4) {
+  position: absolute;
+  background-image: url("../images/meteor.png");
+  width: 60px;
+  height: 49px;
+  opacity: 0;
+  top: 7vh;
+  left: 61vw;
+  -webkit-animation: meteor 5232ms linear infinite;
+          animation: meteor 5232ms linear infinite;
+  -webkit-animation-delay: 3655ms;
+          animation-delay: 3655ms;
+}
+#home .meteor-shower .meteor:nth-child(5) {
+  position: absolute;
+  background-image: url("../images/meteor.png");
+  width: 60px;
+  height: 49px;
+  opacity: 0;
+  top: 25vh;
+  left: 56vw;
+  -webkit-animation: meteor 7191ms linear infinite;
+          animation: meteor 7191ms linear infinite;
+  -webkit-animation-delay: 150ms;
+          animation-delay: 150ms;
+}
+#home .meteor-shower .meteor:nth-child(6) {
+  position: absolute;
+  background-image: url("../images/meteor.png");
+  width: 60px;
+  height: 49px;
+  opacity: 0;
+  top: 79vh;
+  left: 55vw;
+  -webkit-animation: meteor 5935ms linear infinite;
+          animation: meteor 5935ms linear infinite;
+  -webkit-animation-delay: 739ms;
+          animation-delay: 739ms;
+}
+#home .meteor-shower .meteor:nth-child(7) {
+  position: absolute;
+  background-image: url("../images/meteor.png");
+  width: 60px;
+  height: 49px;
+  opacity: 0;
+  top: 54vh;
+  left: 12vw;
+  -webkit-animation: meteor 4402ms linear infinite;
+          animation: meteor 4402ms linear infinite;
+  -webkit-animation-delay: 1077ms;
+          animation-delay: 1077ms;
+}
+#home .meteor-shower .meteor:nth-child(8) {
+  position: absolute;
+  background-image: url("../images/meteor.png");
+  width: 60px;
+  height: 49px;
+  opacity: 0;
+  top: 75vh;
+  left: 80vw;
+  -webkit-animation: meteor 5583ms linear infinite;
+          animation: meteor 5583ms linear infinite;
+  -webkit-animation-delay: 1977ms;
+          animation-delay: 1977ms;
+}
+#home .meteor-shower .meteor:nth-child(9) {
+  position: absolute;
+  background-image: url("../images/meteor.png");
+  width: 60px;
+  height: 49px;
+  opacity: 0;
+  top: 13vh;
+  left: 15vw;
+  -webkit-animation: meteor 4241ms linear infinite;
+          animation: meteor 4241ms linear infinite;
+  -webkit-animation-delay: 2807ms;
+          animation-delay: 2807ms;
+}
+#home .meteor-shower .meteor:nth-child(10) {
+  position: absolute;
+  background-image: url("../images/meteor.png");
+  width: 60px;
+  height: 49px;
+  opacity: 0;
+  top: 67vh;
+  left: 26vw;
+  -webkit-animation: meteor 4775ms linear infinite;
+          animation: meteor 4775ms linear infinite;
+  -webkit-animation-delay: 2070ms;
+          animation-delay: 2070ms;
+}
+#home .meteor-shower .meteor:nth-child(11) {
+  position: absolute;
+  background-image: url("../images/meteor.png");
+  width: 60px;
+  height: 49px;
+  opacity: 0;
+  top: 72vh;
+  left: 7vw;
+  -webkit-animation: meteor 7634ms linear infinite;
+          animation: meteor 7634ms linear infinite;
+  -webkit-animation-delay: 1202ms;
+          animation-delay: 1202ms;
+}
+#home .meteor-shower .meteor:nth-child(12) {
+  position: absolute;
+  background-image: url("../images/meteor.png");
+  width: 60px;
+  height: 49px;
+  opacity: 0;
+  top: 58vh;
+  left: 33vw;
+  -webkit-animation: meteor 3060ms linear infinite;
+          animation: meteor 3060ms linear infinite;
+  -webkit-animation-delay: 295ms;
+          animation-delay: 295ms;
+}
+#home .meteor-shower .meteor:nth-child(13) {
+  position: absolute;
+  background-image: url("../images/meteor.png");
+  width: 60px;
+  height: 49px;
+  opacity: 0;
+  top: 23vh;
+  left: 34vw;
+  -webkit-animation: meteor 5457ms linear infinite;
+          animation: meteor 5457ms linear infinite;
+  -webkit-animation-delay: 2041ms;
+          animation-delay: 2041ms;
+}
+#home .meteor-shower .meteor:nth-child(14) {
+  position: absolute;
+  background-image: url("../images/meteor.png");
+  width: 60px;
+  height: 49px;
+  opacity: 0;
+  top: 8vh;
+  left: 53vw;
+  -webkit-animation: meteor 4278ms linear infinite;
+          animation: meteor 4278ms linear infinite;
+  -webkit-animation-delay: 4423ms;
+          animation-delay: 4423ms;
+}
+#home .meteor-shower .meteor:nth-child(15) {
+  position: absolute;
+  background-image: url("../images/meteor.png");
+  width: 60px;
+  height: 49px;
+  opacity: 0;
+  top: 43vh;
+  left: 10vw;
+  -webkit-animation: meteor 4902ms linear infinite;
+          animation: meteor 4902ms linear infinite;
+  -webkit-animation-delay: 1049ms;
+          animation-delay: 1049ms;
+}
 
+@-webkit-keyframes meteor {
+  0% {
+    transform: translate(300px, -300px);
+    opacity: 1;
+  }
+  15% {
+    transform: translate(-300px, 300px);
+    opacity: 0;
+  }
+}
+
+@keyframes meteor {
+  0% {
+    transform: translate(300px, -300px);
+    opacity: 1;
+  }
+  15% {
+    transform: translate(-300px, 300px);
+    opacity: 0;
+  }
+}
 #work {
   background: #f00;
 }
@@ -289,7 +519,20 @@ main > section.active {
   background: #000;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 991px) {
+  main > section {
+    padding-right: 32px;
+    padding-left: 32px;
+  }
+
+  #home .image {
+    justify-content: flex-start;
+    height: unset;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 767px) {
   #sidebar {
     background: black;
     padding-right: 60px;
@@ -318,8 +561,29 @@ main > section.active {
     display: none;
   }
 
+  h1 {
+    font-size: 36px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
   main {
     padding-left: 0;
     padding-top: 50px;
+  }
+
+  #home {
+    background-image: unset;
+  }
+  #home .info {
+    padding-top: 80px;
+  }
+  #home .info .socials {
+    margin-top: 70px;
+  }
+  #home .info .socials ul {
+    justify-content: space-between;
   }
 }
